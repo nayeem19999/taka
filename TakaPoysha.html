@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="mx-20">
+    <h1 class="text-center text-4xl">Taka Poysha niye ami khela dula kori</h1>
+    <section class="grid grid-cols-3 gap-10  mt-20">
+        <div class="bg-yellow-600 h-[200px] rounded-lg">
+            <h2 class="text-3xl text-white text-center pt-10">Deposit</h2>
+            <p class="text-2xl text-center text-white mt-5" >$ <span id="depositParagraph">00</span></p>
+        </div>
+        <div class="bg-blue-600 h-[200px] rounded-lg">
+            <h2 class="text-3xl text-white text-center pt-10">Total</h2>
+            <p class="text-2xl text-center text-white mt-5">$ <span id="totalParagraph">1000</span></p>
+        </div>
+        <div class="bg-pink-600 h-[200px] rounded-lg">
+            <h2 class="text-3xl text-white text-center pt-10">Withdraw</h2>
+            <p class="text-2xl text-center text-white mt-5">$ <span id="withdrawParagraph">00</span></p>
+        </div>
+    </section>
+
+    <section class="mt-20 flex gap-20">
+        <div>
+            <input class="h-[38px] w-[350px] border-2 border-red-700" type="text" name="" id="depositIn" placeholder="Enter amount">
+            <button class="bg-blue-500  text-white font-bold py-2 px-4 rounded " id="deposit">
+                Deposit
+              </button>
+        </div>
+        <div>
+            <input class="h-[38px] w-[350px] border-2 border-red-700" type="text" name="" id="withdrawIn" placeholder="Enter amount">
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" id="Withdraw">
+                Withdraw
+              </button>
+        </div>
+    </section>
+
+    <script src="./js/withdraw.js"></script>
+    <script src="./js/TakaPoysha.js"></script>
+</body>
+</html>
