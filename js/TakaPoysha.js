@@ -1,11 +1,15 @@
 document.getElementById('deposit').addEventListener('click',function(){
-    if(depositInput.value === ''){
-        const btn=document.getElementById('deposit')
-        btn.setAttribute('disabled')
-    }
+    
     const depositInput = document.getElementById('depositIn');
     const depositInputValue = depositInput.value;
     const depositInputValueNumber = parseInt(depositInputValue)
+
+    if(depositInput.value === ''){
+        document.getElementById('deposit').setAttribute('disabled')
+    }
+    else{
+        document.getElementById('deposit').removeAttribute('disabled')
+    }
 
     const depositParagraph = document.getElementById("depositParagraph");
     const depositParagraphInnerText = depositParagraph.innerText;
